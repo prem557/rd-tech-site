@@ -73,14 +73,9 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--surface-strong);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -695,6 +690,11 @@ header {
     margin: 0 auto;
     display: grid;
     gap: 28px;
+    background: var(--surface);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
 }
 
 .contact-form {
