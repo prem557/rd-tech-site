@@ -106,7 +106,7 @@ header {
 }
 
 .logo {
-    height: 100px;
+    height: 120px;
     width: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -330,13 +330,15 @@ header {
     border: 2px solid var(--primary);
     backdrop-filter: blur(10px);
     font-weight: 800;
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
     transform: translateY(-3px);
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary), #1d4ed8);
     color: #ffffff;
-    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.3);
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
+    border-color: var(--primary);
 }
 
 .btn-ghost {
@@ -363,9 +365,10 @@ header {
 }
 
 .page-hero .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.28);
-    color: #f8fafc;
-    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.3);
+    background: linear-gradient(135deg, var(--primary), #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.4);
+    border-color: var(--primary);
 }
 
 .page-hero .btn-ghost {
