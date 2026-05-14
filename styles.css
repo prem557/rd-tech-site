@@ -32,21 +32,21 @@
 }
 
 :root {
-    color-scheme: dark;
-    --bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    --surface: rgba(15, 23, 42, 0.95);
-    --surface-strong: #f8fafc;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --primary: #3b82f6;
-    --primary-soft: rgba(59, 130, 246, 0.12);
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #f8fafc;
+    --surface-strong: #0f172a;
+    --text: #1e293b;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --primary-soft: rgba(37, 99, 235, 0.1);
     --secondary: #06b6d4;
     --accent: #f59e0b;
-    --border: rgba(148, 163, 184, 0.2);
-    --shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 30px 70px rgba(0, 0, 0, 0.4);
-    --glass: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --border: rgba(148, 163, 184, 0.3);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --glass: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -54,7 +54,6 @@ body {
     color: var(--text);
     line-height: 1.75;
     overflow-x: hidden;
-    backdrop-filter: blur(10px);
 }
 
 img {
@@ -78,10 +77,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.3);
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
@@ -100,7 +98,7 @@ header {
     width: auto;
     object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
 }
 
@@ -116,7 +114,7 @@ header {
 
 .nav-links a {
     font-size: 1rem;
-    color: #e2e8f0;
+    color: var(--text);
     font-weight: 600;
     transition: all 0.3s ease;
     position: relative;
@@ -155,17 +153,15 @@ header {
 
 .hero {
     min-height: calc(100vh - 100px);
-    background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.15), transparent 30%),
-                linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
-    color: #f8fafc;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    color: var(--text);
 }
 
 .page-hero {
     min-height: 550px;
     padding: 120px 40px;
-    background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.2), transparent 32%),
-                linear-gradient(135deg, #07111e 0%, #0b1d33 100%);
-    color: #f8fafc;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: var(--text);
     text-align: center;
 }
 
@@ -173,7 +169,7 @@ header {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 40%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.02), transparent 40%);
     pointer-events: none;
 }
 
@@ -195,7 +191,7 @@ header {
 .page-hero small {
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: rgba(165, 180, 252, 0.95);
+    color: var(--muted);
     font-size: 0.9rem;
     font-weight: 700;
 }
@@ -204,15 +200,11 @@ header {
     font-size: clamp(2.8rem, 4.5vw, 4.8rem);
     line-height: 1.05;
     letter-spacing: -0.05em;
-    text-shadow: 0 20px 50px rgba(15, 23, 42, 0.3);
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.9) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text);
 }
 
 .page-hero p {
-    color: rgba(226, 232, 240, 0.95);
+    color: var(--muted);
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 780px;
@@ -294,7 +286,7 @@ header {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.92);
+    background: var(--surface);
     color: var(--primary);
     border: 2px solid var(--primary);
     backdrop-filter: blur(10px);
@@ -311,7 +303,7 @@ header {
 .btn-ghost {
     background: transparent;
     color: var(--surface-strong);
-    border: 2px solid rgba(15, 23, 42, 0.3);
+    border: 2px solid var(--border);
     font-weight: 800;
 }
 
@@ -324,9 +316,9 @@ header {
 }
 
 .page-hero .btn-secondary {
-    background: rgba(255, 255, 255, 0.16);
-    color: #f8fafc;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: var(--surface);
+    color: var(--primary);
+    border: 2px solid var(--primary);
     backdrop-filter: blur(15px);
     font-weight: 800;
 }
@@ -338,9 +330,9 @@ header {
 }
 
 .page-hero .btn-ghost {
-    background: rgba(255, 255, 255, 0.1);
-    color: #f8fafc;
-    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: var(--surface);
+    color: var(--text);
+    border: 2px solid var(--border);
     backdrop-filter: blur(15px);
     font-weight: 800;
 }
@@ -487,13 +479,13 @@ header {
     justify-content: center;
     padding: 12px 20px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #f8fafc;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
     font-size: 0.95rem;
     font-weight: 600;
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .stats {
