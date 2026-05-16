@@ -2,15 +2,15 @@
 
 All notable changes for the visual redesign are documented in this file.
 
-## [Unreleased] - 2026-05-16
+## [1.1.0] - 2026-05-16
 
 ### Summary
-- Centralized design tokens (colors, spacing, radii, shadows, motion, breakpoints).
-- New typography scale and consistent spacing system applied across the site.
-- Responsive layout adjustments and grid improvements for desktop/tablet/mobile.
-- Component updates: responsive navbar with accessible mobile toggle, buttons, cards, hero badges (namespaced), footer.
-- Micro-interactions and animations: `pop`, `shimmer`, refined `fadeInUp` and reduced-motion support.
-- Accessibility improvements: focus-visible outlines and ARIA attributes for mobile nav.
+- Premium theme refinement with deeper color harmony, richer contrast, and elevated shadows.
+- Updated typography scale, stronger font weights, and better heading spacing for a more polished visual hierarchy.
+- Hero and header refreshed with premium gradients, glassy navigation styling, center-focused CTA layout, and hover depth.
+- Component upgrade across buttons, cards, badges, nav, footer, and image treatment for consistent premium presentation.
+- Enhanced micro-interactions, hover feedback, and reduced-motion support for a refined experience.
+- Accessibility improvements: semantic button labels for mobile nav toggle and scroll-to-top controls.
 
 ### Files changed
 - [styles.css](styles.css)
