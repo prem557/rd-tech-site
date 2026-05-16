@@ -10,7 +10,8 @@
 <header>
     <div class="navbar">
         <img src="images/logo2.png" alt="R.D. Tech Infra" class="logo">
-        <nav class="nav-links">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+        <nav id="primary-navigation" class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -102,6 +103,17 @@ window.addEventListener('scroll', function() {
         backToTop.classList.remove('show');
     }
 });
+// Mobile nav toggle
+(function(){
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function(){
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+    });
+})();
 </script>
 </body>
 </html>
