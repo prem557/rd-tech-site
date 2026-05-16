@@ -52,19 +52,19 @@
 }
 
 :root {
-    /* Color tokens */
+    /* Color tokens — Premium palette */
     color-scheme: light;
-    --bg: #ffffff;
-    --surface: #f8fafc;
-    --surface-strong: #0f172a;
-    --text: #1e293b;
-    --muted: #64748b;
-    --primary: #2563eb;
-    --primary-600: #1d4ed8;
-    --primary-soft: rgba(37, 99, 235, 0.08);
-    --secondary: #06b6d4;
-    --accent: #f59e0b;
-    --border: rgba(148, 163, 184, 0.3);
+    --bg: #f6f7fa; /* soft off-white */
+    --surface: #ffffff;
+    --surface-strong: #081029; /* deep charcoal for headings */
+    --text: #0b1220; /* near-black text for crisp contrast */
+    --muted: #6b7280; /* elegant muted gray */
+    --primary: #0b4cff; /* rich royal blue */
+    --primary-600: #0836d9;
+    --primary-soft: rgba(11, 76, 255, 0.08);
+    --secondary: #00b894; /* refined teal accent */
+    --accent: #b6860b; /* warm gold accent */
+    --border: rgba(11, 18, 32, 0.06);
 
     /* Spacing scale (8px baseline) */
     --space-0: 4px;
@@ -84,12 +84,12 @@
     --h2-size: clamp(1.6rem, 2.6vw, 2.8rem);
     --h3-size: 1.3rem;
 
-    /* Radii & shadows */
+    /* Radii & shadows — slightly stronger for premium depth */
     --radius-sm: 8px;
     --radius-md: 16px;
-    --radius-lg: 28px;
-    --shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
-    --shadow-hover: 0 12px 40px rgba(15, 23, 42, 0.09);
+    --radius-lg: 20px;
+    --shadow: 0 10px 30px rgba(11, 18, 32, 0.06);
+    --shadow-hover: 0 20px 60px rgba(11, 18, 32, 0.10);
 
     /* Layout */
     --container-lg: 1280px;
@@ -102,15 +102,15 @@
     --bp-lg: 1024px;
 
     /* Buttons */
-    --btn-pad-y: 12px;
-    --btn-pad-x: 24px;
+    --btn-pad-y: 14px;
+    --btn-pad-x: 28px;
     /* additional type tokens */
     --h4-size: 1.05rem;
     --lead-size: 1.125rem;
     --stat-num-size: clamp(2.6rem, 4.2vw, 3.5rem);
     /* Motion tokens */
-    --motion-duration-fast: 180ms;
-    --motion-duration: 280ms;
+    --motion-duration-fast: 160ms;
+    --motion-duration: 260ms;
     --motion-duration-long: 420ms;
     --motion-ease: cubic-bezier(.2,.9,.3,1);
 }
