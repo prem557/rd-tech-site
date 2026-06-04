@@ -347,6 +347,13 @@ header {
     overflow: hidden;
 }
 
+.page-hero {
+    min-height: calc(90vh - 100px);
+    background: linear-gradient(135deg, rgba(3, 43, 98, 0.96), rgba(12, 93, 211, 0.92));
+    color: #ffffff;
+    position: relative;
+}
+
 .hero {
     min-height: calc(100vh - 100px);
     background: radial-gradient(circle at top left, rgba(11, 76, 255, 0.18), transparent 35%),
@@ -445,7 +452,7 @@ header {
 .page-hero small {
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.74);
     font-size: 0.9rem;
     font-weight: 700;
 }
@@ -454,11 +461,11 @@ header {
     font-size: var(--h1-size);
     line-height: var(--leading-tight);
     letter-spacing: -0.02em;
-    color: var(--text);
+    color: #ffffff;
 }
 
 .page-hero p {
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.88);
     font-size: var(--lead-size);
     line-height: var(--leading-default);
     max-width: 780px;
@@ -479,13 +486,13 @@ header {
     justify-content: center;
     padding: 12px 20px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #f8fafc;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #ffffff;
     font-size: 0.95rem;
     font-weight: 600;
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .hero-buttons,
@@ -607,10 +614,11 @@ header {
 .section {
     padding: var(--space-6) var(--space-4);
     animation: fadeInUp 0.8s ease-out;
+    background: rgba(255, 255, 255, 0.98);
 }
 
 .section:nth-of-type(even) {
-    background: var(--surface);
+    background: rgba(244, 249, 255, 0.95);
 }
 
 .section-title {
